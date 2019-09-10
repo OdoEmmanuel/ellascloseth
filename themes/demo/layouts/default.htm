@@ -1,0 +1,57 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ella's Brand | {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/orella.png'|theme }}">
+        <link href="{{ 'assets/css/font-awesome.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/themify-icons.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/bootstrap.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/flexslider.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/lightbox.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme-hyperblue.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/custom.css'|theme }}" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="css/font-oswald.css" rel="stylesheet" type="text/css">
+        {% styles %}
+        
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+        <!-- Scripts -->
+       
+        <script src="{{ 'assets/javascript/jquery.min.js'|theme }}"></script>
+         <script src="{{ 'assets/javascript/bootstrap.min.js'|theme }}"></script>
+          <script src="{{ 'assets/javascript/flexslider.min.js'|theme }}"></script> 
+          <script src="{{ 'assets/javascript/lightbox.min.js'|theme }}"></script>
+           <script src="{{ 'assets/javascript/smooth-scroll.min.js'|theme }}"></script>
+            <script src="{{ 'assets/javascript/parallax.js'|theme }}"></script>
+            <script src="{{ 'assets/javascript/scripts.js'|theme }}"></script>
+              <script src={{ 'assets/javascript/spectragram.min.js'}}></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>
