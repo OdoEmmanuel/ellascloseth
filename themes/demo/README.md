@@ -40,8 +40,7 @@ Uncombined JavaScript:
     <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
-    {% framework extras %}
-
+    
 Combined JavaScript:
 
     <script src="{{ [
