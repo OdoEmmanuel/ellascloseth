@@ -51,4 +51,4 @@ Combined JavaScript:
         'assets/javascript/app.js'
     ]|theme }}"></script>
 
-> **Important**: Make sure you keep the `{% styles %}` and `{% scripts %}` placeholder tags as these are used by plugins for injecting assets.
+
